@@ -7,11 +7,41 @@ function pageLoad() {
   // to get started, try to write other parts of 'ride' to the JavaScript console in Chrome
   // e.g. ask 'ride' for its length or only grab the first member of the Array
 
-  //I tried using different if functions for different array lengths because now 
-  //the information below only shows up when there are three passengers but I couldn't figure it out 
-  
+  //I tried using different if functions for different array lengths 
+  //but it is still not working for three customers
+
   console.log(ride)
 
+  if (ride.length < 2 ) {
+    passenger1Name = ride[0].passengerDetails.first
+    passenger1Phone = ride[0].passengerDetails.phoneNumber
+    passenger1NumberOfPassengers = ride[0].numberofPassengers
+    passenger1PickupAddressLine1 = ride[0].pickupLocation.address
+    passenger1PickupAddressLine2 = ride[0].pickupLocation.city
+    passenger1DropoffAddressLine1 = ride[0].dropoffLocation.address
+    passenger1DropoffAddressLine2 = ride[0].dropoffLocation.city
+
+  }
+
+ else if (ride.length = 2) {
+    passenger1Name = ride[0].passengerDetails.first
+    passenger1Phone = ride[0].passengerDetails.phoneNumber
+    passenger1NumberOfPassengers = ride[0].numberofPassengers
+    passenger1PickupAddressLine1 = ride[0].pickupLocation.address
+    passenger1PickupAddressLine2 = ride[0].pickupLocation.city
+    passenger1DropoffAddressLine1 = ride[0].dropoffLocation.address
+    passenger1DropoffAddressLine2 = ride[0].dropoffLocation.city
+  
+    passenger2Name = ride[1].passengerDetails.first
+    passenger2Phone = ride[1].passengerDetails.phoneNumber
+    passenger2NumberOfPassengers = ride[1].numberofPassengers
+    passenger2PickupAddressLine1 = ride[1].pickupLocation.address
+    passenger2PickupAddressLine2 = ride[1].pickupLocation.city
+    passenger2DropoffAddressLine1 = ride[1].dropoffLocation.address
+    passenger2DropoffAddressLine2 = ride[1].dropoffLocation.city  
+
+  }
+  else {
   passenger1Name = ride[0].passengerDetails.first
   passenger1Phone = ride[0].passengerDetails.phoneNumber
   passenger1NumberOfPassengers = ride[0].numberofPassengers
@@ -36,6 +66,7 @@ function pageLoad() {
   passenger3DropoffAddressLine1 = ride[2].dropoffLocation.address
   passenger3DropoffAddressLine2 = ride[2].dropoffLocation.city 
 
+  }
 
  if (ride.length > 1) {
    levelOfService = "Noober Pool"
