@@ -7,9 +7,6 @@ function pageLoad() {
   // to get started, try to write other parts of 'ride' to the JavaScript console in Chrome
   // e.g. ask 'ride' for its length or only grab the first member of the Array
 
-  //I tried using different if functions for different array lengths because now 
-  //the information for the third passenger doesn't show up
-
   console.log(ride)
 
   if (ride.length < 2 ) {
@@ -23,7 +20,7 @@ function pageLoad() {
 
   }
 
- else if (ride.length = 2) {
+ else if (ride.length == 2) {
     passenger1Name = ride[0].passengerDetails.first
     passenger1Phone = ride[0].passengerDetails.phoneNumber
     passenger1NumberOfPassengers = ride[0].numberofPassengers
@@ -41,7 +38,7 @@ function pageLoad() {
     passenger2DropoffAddressLine2 = ride[1].dropoffLocation.city  
 
   }
-  else if (ride.length > 2) {
+  else if (ride.length == 3) {
   passenger1Name = ride[0].passengerDetails.first
   passenger1Phone = ride[0].passengerDetails.phoneNumber
   passenger1NumberOfPassengers = ride[0].numberofPassengers
