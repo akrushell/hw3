@@ -9,7 +9,7 @@ function pageLoad() {
 
   console.log(ride)
 
-  if (ride.length < 2 ) {
+  if (ride.length == 2 ) {
     passenger1Name = ride[0].passengerDetails.first
     passenger1Phone = ride[0].passengerDetails.phoneNumber
     passenger1NumberOfPassengers = ride[0].numberofPassengers
